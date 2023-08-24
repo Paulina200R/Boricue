@@ -1,0 +1,1 @@
+alert ("Su ingreso no esta permitido en esta pagina");

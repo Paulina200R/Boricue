@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgb(34, 34, 34); */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/o2.jpg);
+    background-size: 1280px;
+    background-position-y: center;
+}
+
+.blur{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(70deg, rgb(2, 75, 64) 42%, rgba(2, 75, 64, 0.6) 83%, rgba(2, 75, 64, 0.2) 100%);
+}
+
+label{
+    color: aliceblue;
+    margin-bottom: 40px;
+}
+
+.form-control{
+    height: 40px;
+    width: 20%;
+}
+
+h1{
+    color: aliceblue;
+    margin-left: 20%;
+}
+
+.mb-3{
+    margin-top: 30px;
+}
+
+.btn-primary{
+    margin-left: 37%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.signIn{
+    margin-top: 120px;
+    margin-left: 17%;
+    width: 30%;
+    visibility: hidden;
+}
+
+.signUp{
+    margin-top: -300px;
+    margin-left: 15%;
+    width: 30%;
+    /* visibility: hidden;  */
+}
+
+.tReg{
+    color: aliceblue;
+    margin-left: 28%;
+}
+
+select{
+    padding: 7px;
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgba(240, 248, 255, 0.4);
+    border: 1.5px solid rgba(240, 248, 255, 0.9);
+    background-color: #f0f8ff00;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.05);
+}
+
+#selRol{
+    color: rgba(240, 248, 255, 0);
+}
+
+.opc{
+    color: rgb(2, 75, 64);
+}
+
+#exampleInput{
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(240, 248, 255, 0.9);
+    background-color: #f0f8ff00;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.05);
+}
+
+p{
+    color: rgba(240, 248, 255, 0.6);
+    margin-left: 15%;
+    margin-top: 5px;
+}
+
+.pReg{
+    color: aliceblue;
+    margin-left: 10%;
+}
+
+.breadcrumb-item{
+    color: aliceblue;
+}
+
+#boton{
+    background-color: rgba(240, 248, 255, 0.95);
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    color: rgb(2, 75, 64);
+}

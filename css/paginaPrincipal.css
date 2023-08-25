@@ -127,6 +127,22 @@
 
 }
 
+.contCart{
+    width: 40px;
+    height: 40px;
+    background-color: #00ffff00;
+    border: none;
+    border-radius: 30px;
+    margin-top: -20px;
+    
+}
+
+.car{
+    width: 40px;
+    height: 40px;
+    transform: scale(0.5);
+}
+
 
 @media screen and (max-width: 1100px) {
 

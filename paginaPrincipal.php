@@ -62,6 +62,7 @@ if ($llave != 123) {
     </nav>
     <section class="contProd">
     <div class="contCard">
+        <!-- <button class="contCart"><img src="img/carrito-de-compras.png" alt="" class="car"></button> -->
         <div class="contImg">
             <img src="img/p1.jpg" alt="">
         </div>

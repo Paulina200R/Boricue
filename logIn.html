@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BORICUE</title>
+    <script src="js/logIn.js"></script>
     <link rel="stylesheet" href="css/logIn.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
                     <input type="password" class="form-control" id="exampleInput">
                 </div>
                 <button id="boton" type="submit" class="btn btn-primary"><b>Ingresar</b></button>
-                <p class="pReg">¿Aún no tienes una cuenta? <a class="breadcrumb-item" href="sUp">Registrarse</a></p>
+                <p class="pReg">¿Aún no tienes una cuenta? <a id="bUp" class="breadcrumb-item" onclick="cambioUp()">Registrarse</a></p>
             </form>
             <form class="signUp" id="sUp">
                 <h1 class="tReg"><b>Registro</b></h1>
@@ -52,7 +53,7 @@
                     </select>
                 </div>
                 <button id="boton" type="submit" class="btn btn-primary"><b>Registrarse</b></button>
-                <p>¿Ya tienes una cuenta? <a class="breadcrumb-item" href="sIn">Iniciar Sesión</a></p>
+                <p>¿Ya tienes una cuenta? <a id="bIn" class="breadcrumb-item" onclick="cambioSing()">Iniciar Sesión</a></p>
             </form>
         </section>
     </section>

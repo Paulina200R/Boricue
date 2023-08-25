@@ -31,7 +31,7 @@ if ($llave != 123) {
                             Categoría
                         </a>
                         <ul id="drop" class="dropdown-menu">
-                            <li><a id="itemO" class="dropdown-item" href="#">Tela</a></li>
+                            <li><a id="itemO" class="dropdown-item" href="#">Cuero</a></li>
                             <li><a id="itemO" class="dropdown-item" href="#">Madera</a></li>
                             <!-- <li>
                                 <hr class="dropdown-divider">

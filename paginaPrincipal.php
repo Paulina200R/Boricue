@@ -11,55 +11,17 @@ if ($llave != 123) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BORICUE</title>
-    <link rel="stylesheet" href="css/paginaPrincipal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/paginaPrincipal.css">
+    <script src="js/logIn.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="iMenu" src="img/menu.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="list" class="nav-item dropdown">
-                        <a id="item" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categoría
-                        </a>
-                        <ul id="drop" class="dropdown-menu">
-                            <li><a id="itemO" class="dropdown-item" href="#">Tela</a></li>
-                            <li><a id="itemO" class="dropdown-item" href="#">Madera</a></li>
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                        </ul>
-                    </li>
-                    <li id="list" class="nav-item dropdown">
-                        <a id="item" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Filtros
-                        </a>
-                        <ul id="drop" class="dropdown-menu">
-                            <li><a id="itemO" class="dropdown-item" href="#">Más Reciente</a></li>
-                            <li><a id="itemO" class="dropdown-item" href="#">Más Vendido</a></li>
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input id="barra" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button id="lupa" class="btn btn-outline-success" type="submit"><img class="lupa" src="img/lupa.png" alt=""></button>
-                </form>
-            </div>
-        </div>
-    </nav>
+<?php
+include('menu.php')
+?>
     <section class="contProd">
     <div class="contCard">
         <!-- <button class="contCart"><img src="img/carrito-de-compras.png" alt="" class="car"></button> -->

@@ -42,6 +42,13 @@ h1{
     margin-left: 37%;
     margin-top: 15px;
     margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+    color: aliceblue;
+    background-color: rgb(2, 75, 64);
 }
 
 .signIn{
@@ -107,6 +114,12 @@ p{
 
 .breadcrumb-item{
     color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+.breadcrumb-item:hover{
+    color: aliceblue;
+    font-size: 18px;
 }
 
 #boton{

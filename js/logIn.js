@@ -1,10 +1,18 @@
 window.onload=inicio;
 
+let select = document.getElementById("ejemplo");
+
 function inicio(){
     var bUp = document.getElementById("bUp").onclick=cambioSign;
     var bIn = document.getElementById("bIn").onclick=cambioUp;
     // var inp = document.getElementById("exampleInput").onclick=cambioInp;
 }
+
+let valueSelect = select.value;
+console.log(valueSelect);
+
+let valueTexto = select.options[select.selectedIndex].text;
+console.log(valueTexto);
 
 function cambioSign(){
     var sIn = document.getElementById("sIn").style;

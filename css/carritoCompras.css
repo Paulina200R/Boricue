@@ -13,6 +13,7 @@
 /* cabecera de página */
 
 .cabecera {
+    position: fixed;
     background-color: #1f1f1f;
     width: 100%;
     height: 80px;
@@ -51,17 +52,27 @@
 
 /* productos */
 
+ul{
+    list-style: none;
+}
+
 .cont-products {
+    padding-top: 80px;
+    padding-bottom: 10px;
     width: 100%;
-    height: 427px;
+    min-height: 100vh;
+    /* height: 100vh; */
+    display: block;
     background-color: #1f1f1f;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 60% 20% 20%;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
     row-gap: 10px;
 }
 
 .product {
+    width: 300px;
+    margin-top: 12px;
     display: flex;
     align-items: center;
 }
@@ -79,6 +90,7 @@
     margin-left: 30px;
     display: inline-block;
     color: aliceblue;
+    font-size: 17.5px;
 }
 
 .action {
@@ -86,14 +98,16 @@
 }
 
 .price-u {
-    margin-left: 100px;
+    margin-left: 150px;
     color: #70E6A3;
     display: inline-block;
 
 }
 
 .quantity {
+    margin-left: 200%;
     display: flex;
+    width: 112px;
     align-items: center;
     justify-self: center;
     align-self: center;
@@ -137,6 +151,8 @@
 }
 
 .price {
+    width: 50px;
+    margin-left: 200%;
     justify-self: center;
     align-self: center;
     font-size: 20px;
@@ -149,6 +165,7 @@
     width: 100%;
     height: 100px;
     background-color: #1f1f1f;
+    position: sticky;
     display: flex;
     border-top: 1.5px solid #f0f8ff80;
     align-items: center;
@@ -193,17 +210,44 @@
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1250px) {
+    .quantity{
+        margin-left: 150%;
+
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .quantity{
+        margin-left: 100%;
+
+    }
+}
+
 @media screen and (max-width: 950px) {
     .tittle {
         margin-left: 23%;
         font-size: 37px;
     }
+
+    .quantity{
+        margin-left: 60%;
+
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
     .tittle {
         margin-left: 17%;
         font-size: 33px;
+    }
+
+    .price{
+        margin-left: 70%;
+    }
+
+    .quantity{
+        margin-left: 50%;
     }
 
     .prices {
@@ -219,7 +263,19 @@
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 720px){
+    .quantity{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .quantity{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 580px) {
     .tittle {
         font-size: 25px;
     }
@@ -227,6 +283,15 @@
     .img-back {
         height: 20px;
         width: 20px;
+    }
+
+    .product{
+        width: 220px;
+        margin-left: 35px;
+    }
+
+    .name{
+        width: 100px;
     }
 
     .desc {
@@ -247,6 +312,10 @@
     .price{
         font-size: 15px;
     }
+
+    .quantity{
+        margin-left: 25%;
+    }
     
     #cantidad {
         width: 40px;
@@ -262,5 +331,15 @@
         width: 65%;
         padding: 15px;
         font-size: 17px;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .quantity{
+        margin-left: 30px;
+    }
+
+    .product{
+        margin-left: 0px;
     }
 }

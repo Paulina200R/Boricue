@@ -1,0 +1,277 @@
+<?php
+$llave = $_GET['key'];
+if ($llave != 123){
+    header('Location: error.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORICUE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/carritoCompras.css">
+    <script src="js/carroCompras.js"></script>
+</head>
+
+<body>
+    <header class="cabecera">
+        <button class="back"><img class="img-back" src="img/flecha-izquierda.png"></button>
+        <h1 class="tittle">Carrito de Compras</h1>
+    </header>
+
+    <section class="cont-products">
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p1.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #1</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor1">$30000</p>
+                </li>
+            </ul>
+
+            <ul class="quantity">
+                <li><button class="disminuir" id="dismi"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar" id="aumen"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total1">$00000</p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p2.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #2</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir" id="dismi"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar" id="aumen"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p3.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #3</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir" id="dismi"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar" id="aumen"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p5.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #4</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir" id="dismi"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar" id="aumen"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p4.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #5</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p6.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #6</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p1.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #1</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+        <ul class="product">
+            <ul>
+                <li><img src="img/p2.jpg" class="img-product"></li>
+            </ul>
+            <ul class="desc">
+                <li>
+                    <p class="name">Producto #2</p>
+                </li>
+                <li>
+                    <p class="action">Acción</p>
+                </li>
+                <li>
+                    <p class="price-u" id="valor"><b>$30000</b></p>
+                </li>
+            </ul>
+
+
+            <ul class="quantity">
+                <li><button class="disminuir"><b>-</b></button></li>
+                <li><input type="text" id="cantidad" value="1"></li>
+                <li><button class="aumentar"><b>+</b></button></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p class="price" id="total"><b>$00000</b></p>
+                </li>
+            </ul>
+        </ul>
+
+    </section>
+
+    <footer class="footer">
+        <div class="bill"><button class="buy"><b>Realizar Compra</b></button></div>
+        <div class="prices"><b>$00000</b></div>
+    </footer>
+</body>
+
+</html>

@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const cantidadInput = document.getElementById("cantidad");
-    const btnDisminuir = document.querySelector(".disminuir");
-    const btnAumentar = document.querySelector(".aumentar");
+    var cantInput = document.getElementById("cantidad");
+    var suma = document.querySelector(".aumentar");
+    var restar = document.querySelector(".disminuir");
 
-    btnDisminuir.addEventListener("click", function () {
-        let cantidad = parseInt(cantidadInput.value);
+    suma.addEventListener("click", function () {
+        let cantidad = parseInt(cantInput.value);
+        cantidad++;
+        cantInput.value = cantidad;
+    });
+
+    restar.addEventListener("click", function () {
+        let cantidad = parseInt(cantInput.value);
+
         if (cantidad > 1) {
             cantidad--;
-            cantidadInput.value = cantidad;
+            cantInput.value = cantidad;
         }
     });
 
-    btnAumentar.addEventListener("click", function () {
-        let cantidad = parseInt(cantidadInput.value);
-        cantidad++;
-        cantidadInput.value = cantidad;
-    });
 });
